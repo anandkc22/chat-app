@@ -1,0 +1,189 @@
+.rs {
+    background: white;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.rs-profile {
+    padding-top: 60px;
+    text-align: center;
+    max-width: 90%; 
+    margin: auto;
+}
+
+.rs-profile img {
+    width: 110px; 
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.rs-profile h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rs-profile p {
+    color: #232323;
+    font-size: 10px;
+    opacity: 80%;
+    font-weight: 300;
+}
+
+.rs hr {
+    border-color: #d7d6d6;
+    margin: 15px 0;
+}
+
+.rs-media {
+    color: black;
+    padding: 0 20px;
+    font-size: 13px;
+}
+
+.rs-media div {
+    max-height: 180px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.rs-media div img {
+    width: 120px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rs button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #077eff;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 65px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.arrow-back {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .rs {
+        background: white;
+        position: relative;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .rs-profile {
+        max-width: 90%; 
+        padding-top: 40px; 
+    }
+
+    .rs-profile img {
+        width: 90px; 
+    }
+
+    .rs-profile h3 {
+        font-size: 16px; 
+    }
+
+    .rs-profile p {
+        font-size: 8px; 
+    }
+
+    .rs-media {
+        padding: 0 15px; 
+        font-size: 12px; 
+    }
+
+    .rs-media div {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .rs-media div img {
+        width: 50px; 
+    }
+
+    .rs button {
+        bottom: 20px; 
+        padding: 8px 50px; 
+        font-size: 11px; 
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .arrow-back {
+        display: block;
+        size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rs {
+        background: white;
+        position: relative;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .rs-profile {
+        max-width: 95%; 
+        padding-top: 20px; 
+    }
+
+    .rs-profile img {
+        width: 70px; 
+    }
+
+    .rs-profile h3 {
+        font-size: 14px; 
+    }
+
+    .rs-profile p {
+        font-size: 7px; 
+    }
+
+    .rs-media {
+        padding: 0 10px; 
+        font-size: 11px; 
+    }
+
+    .rs-media div {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    .rs-media div img {
+        width: 100px; 
+    }
+
+    .rs button {
+        bottom: 10px; 
+        padding: 6px 40px; 
+        font-size: 10px; 
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .arrow-back {
+        display: block;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+}
